@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌿 GardenLink
 
-## Getting Started
+**GardenLink** is a beautiful, interactive, and premium "Link-in-Bio" web application (similar to Linktree) built for digital creators and developers. It serves as a unified hub to showcase social profiles, projects, and portfolios with stunning visual aesthetics.
 
-First, run the development server:
+Live demo/profile displays details for **Syahreza Satria** (Digital Creator | Web Developer | UI Designer).
 
+---
+
+## ✨ Features
+
+- **Interactive 3D Fluid Background**: Powered by a custom WebGL/Three.js fluid simulation shader (`LiquidEther`) that reacts dynamically to mouse movement.
+- **Glassmorphism & Sleek Dark Mode**: Designed with premium typography, micro-interactions, and a modern color palette.
+- **Dynamic Text Effects**: Integrated shiny shimmering text animations (`ShinyText`) for profile headings.
+- **Fully Responsive**: Optimized for all devices, from mobile screens to desktop browsers.
+- **Easy Customization**: Centrally managed profile data makes updating links, socials, and bios extremely straightforward.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Core Framework**: [Next.js 16](https://nextjs.org/) (React 19 & TypeScript)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) & [tailwindcss-animate](https://github.com/jamiebuilds/tailwindcss-animate)
+- **3D Graphics**: [Three.js](https://threejs.org/) (for the fluid background simulation)
+- **Animations**: [Motion](https://motion.dev/) (Framer Motion)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/) (FontAwesome 6 & Ionicons)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed (v18.x or higher recommended).
+
+### Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/syahreza-satria/gardenlink.git
+   cd gardenlink
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running Locally
+
+To start the local development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the live application.
+
+### Building for Production
+
+To create a production-ready build:
+```bash
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To personalize the website with your own information:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Open the file [app/src/data.ts](file:///c:/Users/satri/Documents/Development/web-app/gardenlink/app/src/data.ts).
+2. Update the `profile` object, the `social` array, and the `links` array with your details:
+   ```typescript
+   export const profile = {
+     name: "Your Name",
+     role: "Your Role / Description",
+     avatar: "/path-to-your-avatar.webp",
+     bio: "A short bio about yourself...",
+   };
+   ```
+3. Place your profile picture/avatar inside the `public/` directory (e.g., as `public/avatar.webp`).
