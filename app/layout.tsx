@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jakarta.variable} antialiased min-h-screen`}>{children}</body>
+      <body className={`${jakarta.variable} antialiased min-h-screen`} suppressHydrationWarning>{children}</body>
     </html>
   );
 }

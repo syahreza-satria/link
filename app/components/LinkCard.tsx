@@ -1,4 +1,5 @@
 import React, { ElementType } from "react";
+import { motion } from "motion/react";
 
 interface LinkCardProps {
   title: string;
@@ -8,20 +9,22 @@ interface LinkCardProps {
 
 const LinkCard: React.FC<LinkCardProps> = ({ title, url, icon: Icon }) => {
   return (
-    <a
+    <motion.a
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex hover:scale-105 items-center p-4 w-full bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white rounded-full transition-all duration-300 transform backdrop-blur-xl"
+      className="group relative flex items-center justify-center p-4 w-full bg-white/10 border border-white/20 rounded-full transition-colors duration-300 backdrop-blur-xl hover:bg-white/20 hover:border-white"
       title={title}
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
     >
       {Icon && (
-        <span className="mr-4 text-2xl text-white group-hover:text-emerald-400 transition-colors">
+        <span className="absolute left-6 text-xl text-white group-hover:text-emerald-400 transition-colors duration-300">
           <Icon />
         </span>
       )}
-      <span className="font-medium text-white text-sm flex-1 text-center pr-8 uppercase ">{title}</span>
-    </a>
+      <span className="font-semibold text-white text-sm uppercase tracking-wider">{title}</span>
+    </motion.a>
   );
 };
 

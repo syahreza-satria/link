@@ -1,77 +1,112 @@
 "use client";
 
-import Image from "next/image";
 import { profile, links, social } from "@/app/src/data";
-import LinkCard from "@/app/components/LinkCard";
-import { FaCircleCheck, FaShare } from "react-icons/fa6";
-import ShinyText from "@/components/ShinyText";
-import Social from "./components/Social";
-import LiquidEther from "@/components/LiquidEther";
+import SideRays from "@/components/SideRays";
 import Footer from "./components/Footer";
 import ShareButton from "./components/ShareButton";
+import ProfileCard from "./components/ProfileCard";
+import LinksList from "./components/LinksList";
+import { motion } from "motion/react";
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 25, scale: 0.98 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    scale: 1,
+    transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] as const } 
+  }
+};
+
+const listVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08,
+      delayChildren: 0.2
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 15 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] as const }
+  }
+};
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen w-full overflow-hidden bg-black text-white">
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <LiquidEther
-          colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
-          mouseForce={20}
-          cursorSize={100}
-          isViscous
-          viscous={30}
-          iterationsViscous={32}
-          iterationsPoisson={32}
-          resolution={0.5}
-          isBounce={true}
-          autoDemo
-          autoSpeed={1}
-          autoIntensity={2.2}
-          takeoverDuration={0.25}
-          autoResumeDelay={1000}
-          autoRampDuration={0.6}
-          style={{ width: "100%", height: "100%" }}
+    <main className="relative min-h-screen w-full overflow-x-hidden bg-black text-white flex flex-col justify-between">
+      {/* Background - Fixed SideRays to cover entire viewport */}
+      <div className="fixed inset-0 z-0">
+        <SideRays
+          speed={2.5}
+          rayColor1="#EAB308"
+          rayColor2="#96c8ff"
+          intensity={2}
+          spread={2}
+          origin="top-right"
+          tilt={0}
+          saturation={1.5}
+          blend={0.75}
+          falloff={1.6}
+          opacity={1.0}
+          className="absolute inset-0 w-full h-full"
         />
       </div>
 
-      {/* Main */}
-      <div className="relative z-10 p-4 max-w-xl mx-auto py-4">
-        <div className="flex justify-end">
+      {/* Main Container */}
+      <div className="relative z-10 w-full max-w-md md:max-w-4xl mx-auto px-6 py-8 flex flex-col flex-grow justify-between gap-8 min-h-screen">
+        {/* Share Button (Top Right alignment) */}
+        <motion.div 
+          className="flex justify-end"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
           <ShareButton />
+        </motion.div>
+
+        {/* Responsive Content Section */}
+        <div className="flex flex-col md:flex-row gap-6 my-auto w-full items-stretch justify-center">
+          {/* Left Column: Profile Card */}
+          <ProfileCard
+            name={profile.name}
+            role={profile.role}
+            avatar={profile.avatar}
+            bio={profile.bio}
+            socials={social}
+            variants={cardVariants}
+          />
+
+          {/* Right Column: Links List */}
+          <LinksList
+            links={links}
+            variants={cardVariants}
+            listVariants={listVariants}
+            itemVariants={itemVariants}
+          />
         </div>
-        <div className="max-w-xl mx-auto space-y-8 pt-4">
-          <div className="max-w-xl mx-auto text-center space-y-4 flex flex-col items-center">
-            <Image src={profile.avatar} width={148} height={148} className="rounded-full mx-auto border-2 border-white/10 shadow-lg" alt={profile.name} loading="lazy" />
 
-            <div className="flex flex-col space-y-1">
-              <h1 className="text-xl font-bold flex gap-2 items-center mx-auto justify-center leading-none">
-                {profile.name} <FaCircleCheck className="size-4 text-blue-400" />
-              </h1>
+        <motion.hr 
+          className="border-white/10 w-full"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        />
 
-              <div className="flex gap-4 justify-center items-center my-2">
-                {social.map((socialLink, index) => (
-                  <Social key={index} platform={socialLink.platform} url={socialLink.url} icon={socialLink.icon} />
-                ))}
-              </div>
-
-              <ShinyText text={profile.role} speed={5} delay={0} color="#9ca3af" shineColor="#ffffff" spread={120} direction="left" yoyo={false} pauseOnHover={false} disabled={false} className="font-bold text-sm" />
-
-              <p className="text-gray-300 text-sm sm:text-base px-0 sm:px-8 drop-shadow-md">{profile.bio}</p>
-            </div>
-          </div>
-          <hr className="border-gray-800" />
-          {/* Main Links */}
-          <div className="flex flex-col gap-4">
-            {links.map((link, index) => (
-              <LinkCard key={index} title={link.title} url={link.url} icon={link.icon} />
-            ))}
-          </div>
-          <hr className="border-gray-800" />
-
-          {/* Footer */}
+        {/* Footer */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
           <Footer />
-        </div>
+        </motion.div>
       </div>
     </main>
   );
