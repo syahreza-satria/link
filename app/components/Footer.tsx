@@ -30,7 +30,7 @@ const Footer = () => {
         </a>
       </div>
       <p className="text-[10px] text-zinc-600 uppercase tracking-widest mt-1">
-        &copy; 2026 GardenLink &bull; All Rights Reserved
+        &copy; 2026 Link &bull; All Rights Reserved
       </p>
     </footer>
   );

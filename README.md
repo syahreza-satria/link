@@ -1,6 +1,6 @@
-# 🌿 GardenLink
+# 🔗 Link
 
-**GardenLink** is a beautiful, interactive, and premium "Link-in-Bio" web application (similar to Linktree) built for digital creators and developers. It serves as a unified hub to showcase social profiles, projects, and portfolios with stunning visual aesthetics.
+**Link** is a beautiful, interactive, and premium "Link-in-Bio" web application (similar to Linktree) built for digital creators and developers. It serves as a unified hub to showcase social profiles, projects, and portfolios with stunning visual aesthetics.
 
 Live demo/profile displays details for **Syahreza Satria** (Digital Creator | Web Developer | UI Designer).
 
@@ -36,8 +36,8 @@ Make sure you have [Node.js](https://nodejs.org/) installed (v18.x or higher rec
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/syahreza-satria/gardenlink.git
-   cd gardenlink
+   git clone https://github.com/syahreza-satria/link.git
+   cd link
    ```
 
 2. Install dependencies:
@@ -67,7 +67,7 @@ npm run start
 
 To personalize the website with your own information:
 
-1. Open the file [app/src/data.ts](file:///c:/Users/satri/Documents/Development/web-app/gardenlink/app/src/data.ts).
+1. Open the file [app/src/data.ts](file:///c:/Users/satri/Documents/Development/web-app/link/app/src/data.ts).
 2. Update the `profile` object, the `social` array, and the `links` array with your details:
    ```typescript
    export const profile = {
