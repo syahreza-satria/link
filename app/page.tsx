@@ -60,10 +60,10 @@ export default function Home() {
       </div>
 
       {/* Main Container */}
-      <div className="relative z-10 w-full max-w-md md:max-w-4xl mx-auto px-6 py-8 flex flex-col flex-grow justify-between gap-8 min-h-screen">
+      <div className="relative z-10 w-full max-w-xl mx-auto px-4 py-8 md:px-6 flex flex-col gap-6 min-h-screen">
         {/* Share Button (Top Right alignment) */}
         <motion.div 
-          className="flex justify-end"
+          className="flex justify-end w-full"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
@@ -72,7 +72,7 @@ export default function Home() {
         </motion.div>
 
         {/* Responsive Content Section */}
-        <div className="flex flex-col md:flex-row gap-6 my-auto w-full items-stretch justify-center">
+        <div className="flex flex-col gap-6 w-full items-stretch justify-center">
           {/* Left Column: Profile Card */}
           <ProfileCard
             name={profile.name}
