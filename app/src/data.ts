@@ -1,11 +1,11 @@
-import { FaMailBulk } from "react-icons/fa";
-import { FaDiscord, FaGithub, FaInstagram, FaLinkedin, FaPager, FaThreads, FaTiktok, FaYoutube } from "react-icons/fa6";
+import { Globe } from "lucide-react";
+import { FaGithub, FaInstagram, FaLinkedin, FaThreads, FaTiktok, FaYoutube } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 
 export const profile = {
   name: "Syahreza Satria",
   role: "Digital Creator | Web Developer | UI Designer",
-  avatar: "/avatar.webp",
+  avatar: "/avatar.webp?v=1",
   bio: "Digital creator living life to the fullest. Tech enthusiast & gamer. See what I've been working on in the links below.",
 };
 
@@ -49,13 +49,18 @@ export const social = [
 
 export const links = [
   {
-    title: "Portofolio",
+    title: "Developer Portofolio",
     url: "https://syahreza-satria.xyz",
-    icon: FaPager,
+    icon: Globe,
   },
   {
     title: "LunasinYuk",
-    url: "https://script.google.com/macros/s/AKfycby0yCcgK4mckyGJ3Wki8tjxl92Dx0Qz7BrNpntIiZEmzTPOGmjGsqB1AKDAP0gjb2Y/exec",
-    icon: FaPager,
+    url: "https://script.google.com/macros/s/AKfycbxUdCnpESZKwHWgVn6Vv8QNSa1Bs5ZEIaEoQEVSrDQs0NHUtNlf2u-Uepoov2S2HUdd/exec",
+    icon: Globe,
+  },
+  {
+    title: "Learn Japanese Web",
+    url: "https://syahreza-satria.github.io/learn-japanese/",
+    icon: Globe,
   },
 ];
