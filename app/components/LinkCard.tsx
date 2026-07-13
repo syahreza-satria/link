@@ -1,5 +1,6 @@
 import React, { ElementType } from "react";
 import { motion } from "motion/react";
+import { ArrowUpRight } from "lucide-react";
 
 interface LinkCardProps {
   title: string;
@@ -13,17 +14,25 @@ const LinkCard: React.FC<LinkCardProps> = ({ title, url, icon: Icon }) => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative flex items-center justify-center p-4 w-full bg-white/10 border border-white/20 rounded-full transition-colors duration-300 backdrop-blur-xl hover:bg-white/20 hover:border-white"
+      className="group relative flex items-center justify-between p-4 px-6 w-full bg-white/[0.03] hover:bg-white/[0.08] border border-white/10 hover:border-emerald-500/35 rounded-2xl transition-all duration-300 backdrop-blur-md shadow-lg hover:shadow-[0_0_20px_rgba(16,185,129,0.08)]"
       title={title}
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
+      whileHover={{ y: -2, scale: 1.01 }}
+      whileTap={{ scale: 0.99 }}
     >
-      {Icon && (
-        <span className="absolute left-6 text-xl text-white group-hover:text-emerald-400 transition-colors duration-300">
-          <Icon />
+      <div className="flex items-center gap-4">
+        {Icon && (
+          <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/[0.05] group-hover:bg-white/[0.1] text-zinc-300 group-hover:text-emerald-400 transition-all duration-300">
+            <Icon className="w-5 h-5" />
+          </div>
+        )}
+        <span className="font-medium text-white/90 group-hover:text-white text-sm uppercase tracking-wider transition-colors duration-300">
+          {title}
         </span>
-      )}
-      <span className="font-semibold text-white text-sm uppercase tracking-wider">{title}</span>
+      </div>
+      
+      <div className="flex items-center justify-center w-8 h-8 rounded-full bg-white/[0.02] group-hover:bg-white/[0.1] border border-white/5 group-hover:border-white/10 transition-all duration-300">
+        <ArrowUpRight className="w-4 h-4 text-zinc-400 group-hover:text-white transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+      </div>
     </motion.a>
   );
 };
