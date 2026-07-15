@@ -1,5 +1,5 @@
 import { Globe } from "lucide-react";
-import { FaGithub, FaInstagram, FaLinkedin, FaThreads, FaTiktok, FaYoutube } from "react-icons/fa6";
+import { FaDiscord, FaGithub, FaInstagram, FaLinkedin, FaThreads, FaTiktok, FaYoutube } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 
 export const profile = {
@@ -48,6 +48,11 @@ export const social = [
 ];
 
 export const links = [
+  {
+    title: "Discord Server",
+    url: "https://discord.gg/zjacHr23yt",
+    icon: FaDiscord,
+  },
   {
     title: "Developer Portofolio",
     url: "https://syahreza-satria.xyz",
