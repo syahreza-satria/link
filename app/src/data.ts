@@ -64,6 +64,11 @@ export const links = [
     icon: Globe,
   },
   {
+    title: "Local Taste Coffee Website",
+    url: "https://local-taste-coffee.vercel.app/",
+    icon: Globe,
+  },
+  {
     title: "Learn Japanese Web",
     url: "https://syahreza-satria.github.io/learn-japanese/",
     icon: Globe,
