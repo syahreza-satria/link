@@ -22,7 +22,7 @@ const LinkCard: React.FC<LinkCardProps> = ({ title, url, icon: Icon }) => {
       <div className="flex items-center gap-4">
         {Icon && (
           <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/[0.05] group-hover:bg-white/[0.1] text-zinc-300 group-hover:text-emerald-400 transition-all duration-300">
-            <Icon className="w-5 h-5" />
+            <Icon className="w-5 h-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
           </div>
         )}
         <span className="font-medium text-white/90 group-hover:text-white text-sm uppercase tracking-wider transition-colors duration-300">

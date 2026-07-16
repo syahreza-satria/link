@@ -9,7 +9,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Gardenlink - Syahreza Satria Alfath",
+  title: "Link - Syahreza Satria Alfath",
   description: "Made with 🤍 by Syahreza Satria",
 };
 
