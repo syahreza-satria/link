@@ -59,13 +59,18 @@ export const links = [
     icon: Globe,
   },
   {
+    title: "My Photography Hobby",
+    url: "https://instagram.com/pixbyez/",
+    icon: FaInstagram,
+  },
+  {
     title: "LunasinYuk",
     url: "https://script.google.com/macros/s/AKfycbxUdCnpESZKwHWgVn6Vv8QNSa1Bs5ZEIaEoQEVSrDQs0NHUtNlf2u-Uepoov2S2HUdd/exec",
     icon: Globe,
   },
   {
     title: "Local Taste Coffee Website",
-    url: "https://local-taste-coffee.vercel.app/",
+    url: "https://localtastecoffee.my.id/",
     icon: Globe,
   },
   {
