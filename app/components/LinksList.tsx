@@ -7,6 +7,7 @@ interface LinkItem {
   title: string;
   url: string;
   icon: any;
+  isHighlighted?: boolean;
 }
 
 interface LinksListProps {
@@ -41,7 +42,12 @@ export default function LinksList({
       >
         {links.map((link, index) => (
           <motion.div key={index} variants={itemVariants}>
-            <LinkCard title={link.title} url={link.url} icon={link.icon} />
+            <LinkCard 
+              title={link.title} 
+              url={link.url} 
+              icon={link.icon} 
+              isHighlighted={link.isHighlighted} 
+            />
           </motion.div>
         ))}
       </motion.div>

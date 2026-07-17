@@ -57,6 +57,7 @@ export const links = [
     title: "Developer Portofolio",
     url: "https://syahreza-satria.xyz",
     icon: Globe,
+    isHighlighted: true,
   },
   {
     title: "My Photography Hobby",
