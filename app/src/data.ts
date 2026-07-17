@@ -63,6 +63,7 @@ export const links = [
     title: "My Photography Hobby",
     url: "https://instagram.com/pixbyez/",
     icon: FaInstagram,
+    isHighlighted: true,
   },
   {
     title: "LunasinYuk",
