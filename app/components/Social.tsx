@@ -60,9 +60,9 @@ const Social: React.FC<SocialProps> = ({ platform, url, icon: Icon }) => {
       rel="noopener noreferrer"
       whileHover={{ scale: 1.15, y: -2 }}
       whileTap={{ scale: 0.95 }}
-      className={`flex items-center justify-center w-10 h-10 rounded-full bg-white/[0.03] border border-white/10 transition-all duration-300 text-zinc-400 ${brand.hoverText} ${brand.bg} ${brand.border}`}
+      className={`flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/[0.03] border border-white/10 transition-all duration-300 text-zinc-400 ${brand.hoverText} ${brand.bg} ${brand.border}`}
     >
-      <Icon className="size-5 transition-colors duration-300" />
+      <Icon className="size-[18px] sm:size-5 transition-colors duration-300" />
     </motion.a>
   );
 };

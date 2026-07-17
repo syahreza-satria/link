@@ -82,7 +82,7 @@ export default function ProfileCard({
           </p>
 
           {/* Social Icons (Moved below bio with wrap/gap styling) */}
-          <div className="flex flex-wrap gap-3.5 justify-center items-center pt-3 pb-1 w-full">
+          <div className="flex flex-wrap gap-2.5 sm:gap-3.5 justify-center items-center pt-3 pb-1 w-full">
             {socials.map((socialLink, index) => (
               <Social key={index} platform={socialLink.platform} url={socialLink.url} icon={socialLink.icon} />
             ))}
