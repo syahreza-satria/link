@@ -49,6 +49,16 @@ export const social = [
 
 export const links = [
   {
+    title: "Mie Ayam Production",
+    url: "https://mie-ayam-production.vercel.app/",
+    icon: FaBowlFood,
+  },
+  {
+    title: "Discord Server",
+    url: "https://discord.gg/zjacHr23yt",
+    icon: FaDiscord,
+  },
+  {
     title: "Developer Portofolio",
     url: "https://syahreza-satria.xyz",
     icon: Globe,
@@ -59,16 +69,6 @@ export const links = [
     url: "https://instagram.com/pixbyez/",
     icon: FaInstagram,
     isHighlighted: true,
-  },
-  {
-    title: "Mie Ayam Production",
-    url: "https://mie-ayam-production.vercel.app/",
-    icon: FaBowlFood,
-  },
-  {
-    title: "Discord Server",
-    url: "https://discord.gg/zjacHr23yt",
-    icon: FaDiscord,
   },
   {
     title: "LunasinYuk",
