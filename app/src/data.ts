@@ -1,5 +1,5 @@
 import { Globe } from "lucide-react";
-import { FaBowlFood, FaDiscord, FaGithub, FaInstagram, FaLinkedin, FaThreads, FaTiktok, FaYoutube } from "react-icons/fa6";
+import { FaBowlFood, FaDiscord, FaGithub, FaInstagram, FaLinkedin, FaThreads, FaTiktok, FaYoutube, FaRegNewspaper  } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 
 export const profile = {
@@ -69,6 +69,12 @@ export const links = [
     url: "https://instagram.com/pixbyez/",
     icon: FaInstagram,
     isHighlighted: true,
+  },
+  {
+    title: "Rakit CV",
+    url: "https://rakitcv.syahreza-satria.xyz/",
+    icon: FaRegNewspaper ,
+    isHighlighted: false,
   },
   {
     title: "LunasinYuk",
