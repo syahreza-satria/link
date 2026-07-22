@@ -1,6 +1,6 @@
 # 🔗 Link - Premium Link-in-Bio Hub
 
-**Link** adalah aplikasi web "Link-in-Bio" (seperti Linktree) premium dan interaktif yang dirancang untuk kreator digital dan developer. Proyek ini menyelesaikan masalah keterbatasan media sosial yang hanya mengizinkan satu tautan profil dengan menyediakan halaman hub personal berdesain futuristik, responsif, dan kaya akan animasi interaktif untuk menampilkan seluruh portofolio, proyek, dan jejaring sosial dalam satu tempat.
+**Link** is a beautiful, interactive, and premium "Link-in-Bio" web application (similar to Linktree) built for digital creators and developers. It solves the limitation of social media platforms that restrict users to a single profile link by providing a futuristic, responsive, and highly animated hub to showcase all of your portfolios, projects, and social media channels in one place.
 
 ---
 
@@ -14,28 +14,28 @@
 
 ---
 
-## ✨ Fitur Utama
+## ✨ Key Features
 
-- **Pancaran Cahaya Latar Belakang (SideRays)**: Latar belakang premium dengan efek pancaran cahaya (*ray animation*) dinamis yang memberikan kesan kedalaman dan estetika modern.
-- **Efek Teks Bersinar (ShinyText)**: Animasi teks berkilau (*shimmer effect*) yang elegan untuk mempercantik peran/jabatan pada profil.
-- **Lightbox Preview Avatar**: Foto profil dapat diklik untuk memperbesar gambar dalam tampilan modal interaktif menggunakan transisi pegas yang mulus.
-- **Tombol Berbagi Cepat (Share Button)**: Terintegrasi dengan Web Share API bawaan peramban (browser) untuk memudahkan pengunjung membagikan halaman profil Anda hanya dengan sekali klik.
-- **Optimasi SEO & Skema Metadata**: Dilengkapi dengan metadata OpenGraph, Twitter Cards, optimasi robot mesin pencari, serta skema JSON-LD (`ProfilePage` & `Person`) untuk optimasi SEO yang maksimal.
-- **Analitik Vercel**: Integrasi siap pakai dengan `@vercel/analytics` untuk melacak jumlah kunjungan dan interaksi pengguna.
-- **Desain Responsif & Glassmorphism**: Tampilan antarmuka berbasis *glassmorphic* yang optimal diakses dari perangkat mobile maupun desktop.
+- **Ambient Background Rays (SideRays)**: A premium background layout with dynamic ray animations that add depth and a modern aesthetic.
+- **Glowing Text Effects (ShinyText)**: Sleek, shimmering text animations to highlight your job role and grab visitors' attention.
+- **Lightbox Avatar Preview**: Tap or click the profile picture to view a larger version in a smooth, spring-animated modal backdrop.
+- **Quick Share Button**: Seamless integration with the browser's native Web Share API, enabling users to share your link hub in a single click.
+- **SEO & Metadata Optimization**: Loaded with rich OpenGraph tags, Twitter Cards, search engine directives, and structured JSON-LD schemas (`ProfilePage` & `Person`) for maximum search visibility.
+- **Vercel Analytics**: Built-in support using `@vercel/analytics` to monitor visitor engagement and link click-through rates.
+- **Responsive Glassmorphism UI**: Beautiful frosted-glass UI elements that fit perfectly on all mobile, tablet, and desktop screens.
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- **Framework Utama**: [Next.js v16](https://nextjs.org/) (App Router, React 19, TypeScript)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) (menggunakan `@tailwindcss/postcss`) & [tailwindcss-animate](https://github.com/jamiebuilds/tailwindcss-animate)
-- **Animasi & Interaksi**: [Motion](https://motion.dev/) (Framer Motion)
-- **Pustaka Grafis (WebGL/Three.js)**: [Three.js](https://threejs.org/) & [OGL](https://github.com/oopsa/ogl) (tersedia komponen `LiquidEther.tsx` untuk eksperimen latar belakang cairan interaktif)
-- **Kumpulan Ikon**: [React Icons](https://react-icons.github.io/react-icons/) (FontAwesome 6 & Ionicons) & [Lucide React](https://lucide.dev/)
+- **Core Framework**: [Next.js v16](https://nextjs.org/) (App Router, React 19, TypeScript)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) (configured via `@tailwindcss/postcss`) & [tailwindcss-animate](https://github.com/jamiebuilds/tailwindcss-animate)
+- **Animation & Motion**: [Motion](https://motion.dev/) (Framer Motion)
+- **Graphics/WebGL**: [Three.js](https://threejs.org/) & [OGL](https://github.com/oopsa/ogl) (includes `LiquidEther.tsx` component for experimental fluid-simulation backgrounds)
+- **Icon Libraries**: [React Icons](https://react-icons.github.io/react-icons/) (FontAwesome 6 & Ionicons) & [Lucide React](https://lucide.dev/)
 
-### Tools & Infrastruktur
+### Tools & Infrastructure
 - **Web Analytics**: [Vercel Analytics](https://vercel.com/analytics)
 - **Linting**: [ESLint](https://eslint.org/)
 - **Runtime Environment**: [Node.js](https://nodejs.org/)
@@ -44,20 +44,20 @@
 
 ## 📸 Screenshot / Demo
 
-*Placeholder Tampilan Antarmuka:*
+*User Interface Diagram Placeholder:*
 
 ```
 ┌─────────────────────────────────────────┐
 │ [🔗 Share]                              │
 │                                         │
-│          (✨ Foto Profil Glow ✨)       │
+│          (✨ Glowing Profile Avatar ✨) │
 │               Syahreza Satria           │
 │           - DIGITAL CREATOR -           │
 │                                         │
 │  [ Mie Ayam Production               ]  │
 │  [ Discord Server                    ]  │
-│  [ 🌐 Developer Portofolio (Highlight)]  │
-│  [ 📷 Photography (Highlight)        ]  │
+│  [ 🌐 Developer Portfolio (Highlighted)]  │
+│  [ 📷 Photography (Highlighted)      ]  │
 │  [ Rakit CV                          ]  │
 │                                         │
 │  (𝕏) (🔗) (💼) (✉️) (🐙)                 │
@@ -66,126 +66,126 @@
 └─────────────────────────────────────────┘
 ```
 
-*(Untuk menambahkan screenshot asli, simpan file gambar di dalam folder `/public` dan perbarui tautan ini)*
+*(To add actual screenshots, save your images under the `/public` folder and update this section)*
 
 ---
 
-## 📋 Prasyarat
+## 📋 Prerequisites
 
-Sebelum memulai instalasi, pastikan lingkungan pengembangan Anda telah memenuhi spesifikasi berikut:
-- **Node.js**: Versi `18.x` atau yang lebih baru (sangat direkomendasikan versi LTS terbaru)
-- **NPM / Bun / Yarn**: Pengelola paket bawaan Node.js
+Before starting, ensure your development environment meets the following requirements:
+- **Node.js**: Version `18.x` or higher (LTS recommended)
+- **NPM / Bun / Yarn**: Default package manager bundled with Node.js
 
 ---
 
-## ⚙️ Instalasi
+## ⚙️ Installation
 
-Ikuti langkah-langkah di bawah ini untuk memasang proyek ini di lingkungan lokal Anda:
+Follow these steps to set up the project locally:
 
-1. **Clone Repositori**:
+1. **Clone the Repository**:
    ```bash
    git clone https://github.com/syahreza-satria/link.git
    cd link
    ```
 
-2. **Pasang Dependensi**:
+2. **Install Dependencies**:
    ```bash
    npm install
    ```
 
-3. **Konfigurasi Profil Anda**:
-   Buka file [app/src/data.ts](file:///c:/Users/satri/Documents/Development/web-app/link/app/src/data.ts) dan sesuaikan informasi profil, tautan sosial, serta daftar link yang ingin Anda tampilkan:
+3. **Configure Your Profile**:
+   Open [app/src/data.ts](file:///c:/Users/satri/Documents/Development/web-app/link/app/src/data.ts) and customize the profile information, social accounts, and links:
    ```typescript
    export const profile = {
-     name: "Nama Anda",
-     role: "Peran / Bidang Anda",
-     avatar: "/avatar.webp", // Simpan gambar di folder public/avatar.webp
-     bio: "Deskripsi singkat tentang diri Anda...",
+     name: "Your Name",
+     role: "Your Role / Profession",
+     avatar: "/avatar.webp", // Save your profile picture to the public/ directory
+     bio: "A short bio about yourself...",
    };
    ```
 
 ---
 
-## 🚀 Cara Menjalankan
+## 🚀 Running the Project
 
-Gunakan perintah-perintah berikut untuk mengelola siklus hidup aplikasi:
+Use the following npm scripts to run, build, and check the application:
 
-### Pengembangan Lokal (Development)
-Menjalankan server pengembangan lokal dengan fitur *Hot Module Replacement* (HMR):
+### Run Development Server
+Starts the local development server with Hot Module Replacement (HMR):
 ```bash
 npm run dev
 ```
-Aplikasi dapat diakses melalui browser di alamat [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000) in your web browser.
 
-### Pembuatan Bundel Produksi (Build)
-Mengompilasi dan mengoptimalkan aplikasi untuk disiapkan ke lingkungan produksi:
+### Build for Production
+Compiles and optimizes the application for production deployment:
 ```bash
 npm run build
 ```
 
-### Menjalankan Mode Produksi (Start)
-Menjalankan server lokal menggunakan hasil kompilasi produksi:
+### Start Production Server
+Runs the compiled application locally:
 ```bash
 npm run start
 ```
 
-### Pemeriksaan Kode (Linting)
-Menjalankan analisis statis kode untuk mendeteksi potensi masalah:
+### Code Linting
+Analyzes the codebase for syntax or styling issues:
 ```bash
 npm run lint
 ```
 
 ---
 
-## 📁 Struktur Folder
+## 📁 Folder Structure
 
-Berikut adalah struktur folder utama dari proyek ini:
+Below is an overview of the project's folder layout:
 
 ```
 link/
-├── app/                      # Direktori Next.js App Router (Rute & Halaman Utama)
-│   ├── components/           # Komponen UI spesifik untuk halaman profil
-│   │   ├── Footer.tsx        # Bagian kaki halaman dengan copyright & nama author
-│   │   ├── LinkCard.tsx      # Komponen kartu tautan dengan efek hover & highlight
-│   │   ├── LinksList.tsx     # Pengendali daftar kartu tautan dengan animasi stagger
-│   │   ├── ProfileCard.tsx   # Kartu profil utama, bio, sosial, dan preview avatar
-│   │   ├── ShareButton.tsx   # Tombol bagikan menggunakan Web Share API
-│   │   └── Social.tsx        # Tombol media sosial dengan ikon dinamis
-│   ├── src/                  # Sumber data dan konfigurasi statis
-│   │   ├── data.ts           # Tempat utama mengedit isi profil, tautan, & medsos
-│   │   └── global.d.ts       # Deklarasi tipe TypeScript global
-│   ├── globals.css           # Gaya Tailwind CSS v4 global
-│   ├── layout.tsx            # Layout global (SEO, OpenGraph, Font, Analytics)
-│   └── page.tsx              # Struktur halaman utama dan inisialisasi SideRays
-├── components/               # Komponen UI global dan efek visual premium
-│   ├── LiquidEther.tsx       # Animasi latar belakang WebGL cairan interaktif
-│   ├── ShinyText.tsx         # Efek teks berkilau (shimmer effect)
-│   └── SideRays.tsx          # Komponen efek pancaran cahaya di latar belakang
-├── public/                   # Aset media statis (avatar, favicon, manifest)
-├── package.json              # Daftar pustaka dependensi & skrip proyek
-└── tsconfig.json             # Konfigurasi compiler TypeScript
+├── app/                      # Next.js App Router (Pages & Layouts)
+│   ├── components/           # Page-specific UI components
+│   │   ├── Footer.tsx        # Footer with copyright and author link
+│   │   ├── LinkCard.tsx      # Interactive card component with hover & highlight states
+│   │   ├── LinksList.tsx     # Dynamic link list wrapper using motion stagger effects
+│   │   ├── ProfileCard.tsx   # Header card containing avatar, bio, and social bar
+│   │   ├── ShareButton.tsx   # Share button connected to the Web Share API
+│   │   └── Social.tsx        # Circular social icon buttons
+│   ├── src/                  # Static source data and typings
+│   │   ├── data.ts           # Central config file for your profile info and links
+│   │   └── global.d.ts       # Global TypeScript declarations
+│   ├── globals.css           # Global Tailwind CSS v4 styles
+│   ├── layout.tsx            # Main layout (Fonts, SEO tags, JSON-LD Schema, Vercel Analytics)
+│   └── page.tsx              # Main entry page containing layout and background rays
+├── components/               # Global components and high-end visual effects
+│   ├── LiquidEther.tsx       # Experimental interactive WebGL fluid background
+│   ├── ShinyText.tsx         # Shimmering text overlay effect
+│   └── SideRays.tsx          # Glowing light rays background visual
+├── public/                   # Static assets (images, favicon, manifest)
+├── package.json              # Package manifest and build scripts
+└── tsconfig.json             # TypeScript compiler settings
 ```
 
 ---
 
 ## 🔒 Environment Variables
 
-Aplikasi ini berjalan sepenuhnya secara statis di sisi klien (*client-side*), sehingga tidak memerlukan basis data ataupun konfigurasi `.env` yang rumit untuk penggunaan dasar.
+This application is fully client-side and does not require complex environment variables or database connections for general usage.
 
-Namun, jika Anda ingin mengaktifkan Vercel Analytics saat melakukan deployment di Vercel:
-- **`VERCEL_ANALYTICS_ID`**: Diatur secara otomatis oleh Vercel ketika mengaktifkan fitur Analytics di Dashboard Vercel Anda.
-
----
-
-## 📄 Lisensi
-
-Proyek ini dilisensikan di bawah **Lisensi MIT** — bebas digunakan, dimodifikasi, dan didistribusikan baik untuk kepentingan personal maupun komersial.
+However, if you deploy to Vercel and want to use built-in analytics:
+- **`VERCEL_ANALYTICS_ID`**: Automatically injected by Vercel when enabling Analytics in your Vercel Project Dashboard.
 
 ---
 
-## 👤 Kontak / Author
+## 📄 License
 
-- **Nama**: Syahreza Satria Alfath
+This project is licensed under the **MIT License** — you are free to use, modify, and distribute it for both personal and commercial purposes.
+
+---
+
+## 👤 Contact / Author
+
+- **Name**: Syahreza Satria Alfath
 - **Website**: [syahreza-satria.xyz](https://syahreza-satria.xyz)
 - **LinkedIn**: [Syahreza Satria Alfath](https://www.linkedin.com/in/syahreza-satria-alfath)
 - **GitHub**: [@syahreza-satria](https://github.com/syahreza-satria)
